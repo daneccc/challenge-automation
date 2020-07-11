@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="38c45410-14ec-487c-a071-c281e94a2aa4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegisterSuccessfullyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegisterSuccessfullyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegisterSuccessfullyTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/tests/RegisterSuccessfullyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/RegisterSuccessfullyTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,17 +44,32 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="JUnit.RegisterSuccessfullyTest">
+  <component name="RunManager" selected="JUnit.RegisterSuccessfullyTest (1)">
+    <configuration name="RegisterSuccessfullyTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webdriver-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.organizze.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.organizze.tests" />
+      <option name="MAIN_CLASS_NAME" value="br.com.organizze.tests.RegisterSuccessfullyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegisterSuccessfullyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webdriver-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="br.com.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.RegisterSuccessfullyTest" />
+      <option name="PACKAGE_NAME" value="br.com.tests" />
+      <option name="MAIN_CLASS_NAME" value="br.com.tests.RegisterSuccessfullyTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -64,12 +79,12 @@
       <module name="webdriver-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="br.com.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.RegisterSuccessfullyTest" />
+      <option name="PACKAGE_NAME" value="br.com.tests" />
+      <option name="MAIN_CLASS_NAME" value="br.com.tests.RegisterSuccessfullyTest" />
       <option name="METHOD_NAME" value="testCase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -78,6 +93,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RegisterSuccessfullyTest (1)" />
         <item itemvalue="JUnit.RegisterSuccessfullyTest" />
         <item itemvalue="JUnit.RegisterSuccessfullyTest.testCase" />
       </list>
@@ -101,22 +117,26 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="556" y="59" width="800" height="675" key="#Project_Structure/0.27.1366.741@0.27.1366.741" timestamp="1594410268097" />
-    <state width="1324" height="194" key="GridCell.Tab.0.bottom" timestamp="1594478268745">
+    <state x="388" y="326" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1594479588106">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1324" height="194" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1594478268745" />
-    <state width="1324" height="194" key="GridCell.Tab.0.center" timestamp="1594478268744">
+    <state x="388" y="326" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.27.1366.741@0.27.1366.741" timestamp="1594479588106" />
+    <state width="1324" height="194" key="GridCell.Tab.0.bottom" timestamp="1594479403186">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1324" height="194" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1594478268744" />
-    <state width="1324" height="194" key="GridCell.Tab.0.left" timestamp="1594478268744">
+    <state width="1324" height="194" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1594479403186" />
+    <state width="1324" height="194" key="GridCell.Tab.0.center" timestamp="1594479403186">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1324" height="194" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1594478268744" />
-    <state width="1324" height="194" key="GridCell.Tab.0.right" timestamp="1594478268745">
+    <state width="1324" height="194" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1594479403186" />
+    <state width="1324" height="194" key="GridCell.Tab.0.left" timestamp="1594479403185">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1324" height="194" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1594478268745" />
+    <state width="1324" height="194" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1594479403185" />
+    <state width="1324" height="194" key="GridCell.Tab.0.right" timestamp="1594479403186">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1324" height="194" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1594479403186" />
     <state x="466" y="27" width="900" height="739" key="SettingsEditor" timestamp="1594412746906">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -125,16 +145,5 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="682" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1594412738909" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/RegisterSuccessfullyTest.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

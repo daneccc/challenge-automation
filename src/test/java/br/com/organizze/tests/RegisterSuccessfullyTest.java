@@ -1,4 +1,4 @@
-package tests;
+package br.com.organizze.tests;
 
 import static org.junit.Assert.assertEquals;
 
@@ -49,7 +49,7 @@ public class RegisterSuccessfullyTest {
         // STEP 02: click on "Cadastre-se"
         browser.findElement(By.linkText("Cadastre-se")).click();
 
-        // STEP 03: select "Organizar as minhas finanças" option. I can't find
+        // STEP 03: select "Organizar as minhas finanças" option. I can't find it on the website
         //browser.findElement(By.linkText("Organizar as minhas finanças")).click();
 
         // Identifying the registration form
@@ -71,13 +71,11 @@ public class RegisterSuccessfullyTest {
         signUpForm.findElement(By.cssSelector("button.btn.btn-primary.btn-rounded")).click();
 
         // Loading box
-        WebDriverWait waitLoadingBox = new WebDriverWait(browser, 15);
+        WebDriverWait waitLoadingBox = new WebDriverWait(browser, 10);
         waitLoadingBox.until(ExpectedConditions.visibilityOfElementLocated(By.className("signup__loading-box")));
-        //String messageToWait = browser.findElement(By.className("signup__status-title")).getText();
-        //assertEquals("Aguarde, estamos preparando sua conta...", messageToWait);
 
         // Expected outcome:
-        WebDriverWait waitSuccessBox = new WebDriverWait(browser, 15);
+        WebDriverWait waitSuccessBox = new WebDriverWait(browser, 10);
         waitSuccessBox.until(ExpectedConditions.visibilityOfElementLocated(By.className("signup__success-box")));
         String congratsMessage = browser.findElement(By.xpath("//html/body/div[2]/div/div[2]/h3")).getText();
         String infoMessage = browser.findElement(By.xpath("/html/body/div[2]/div/div[2]/p")).getText();
