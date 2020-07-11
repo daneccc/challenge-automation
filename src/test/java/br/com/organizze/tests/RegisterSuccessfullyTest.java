@@ -38,7 +38,7 @@ public class RegisterSuccessfullyTest {
         // opening the browser
         System.setProperty("webdriver.chrome.driver", "chromedriver");
         browser = new ChromeDriver();
-        browser.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        browser.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
         // STEP 01: access the URL
         browser.get(url);
@@ -71,11 +71,11 @@ public class RegisterSuccessfullyTest {
         signUpForm.findElement(By.cssSelector("button.btn.btn-primary.btn-rounded")).click();
 
         // Loading box
-        WebDriverWait waitLoadingBox = new WebDriverWait(browser, 10);
+        WebDriverWait waitLoadingBox = new WebDriverWait(browser, 20);
         waitLoadingBox.until(ExpectedConditions.visibilityOfElementLocated(By.className("signup__loading-box")));
 
         // Expected outcome:
-        WebDriverWait waitSuccessBox = new WebDriverWait(browser, 10);
+        WebDriverWait waitSuccessBox = new WebDriverWait(browser, 20);
         waitSuccessBox.until(ExpectedConditions.visibilityOfElementLocated(By.className("signup__success-box")));
         String congratsMessage = browser.findElement(By.xpath("//html/body/div[2]/div/div[2]/h3")).getText();
         String infoMessage = browser.findElement(By.xpath("/html/body/div[2]/div/div[2]/p")).getText();
