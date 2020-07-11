@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="webdriver-java" />
+        <module name="challengeAutomation" />
         <module name="webdriverJava" />
       </profile>
     </annotationProcessing>
