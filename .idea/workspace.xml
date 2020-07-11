@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38c45410-14ec-487c-a071-c281e94a2aa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegisterSuccessfullyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegisterSuccessfullyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/tests/RegisterSuccessfullyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/RegisterSuccessfullyTest.class" afterDir="false" />
@@ -102,22 +101,22 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="556" y="59" width="800" height="675" key="#Project_Structure/0.27.1366.741@0.27.1366.741" timestamp="1594410268097" />
-    <state width="641" height="194" key="GridCell.Tab.0.bottom" timestamp="1594474420099">
+    <state width="1324" height="194" key="GridCell.Tab.0.bottom" timestamp="1594478268745">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="641" height="194" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1594474420099" />
-    <state width="641" height="194" key="GridCell.Tab.0.center" timestamp="1594474420099">
+    <state width="1324" height="194" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1594478268745" />
+    <state width="1324" height="194" key="GridCell.Tab.0.center" timestamp="1594478268744">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="641" height="194" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1594474420099" />
-    <state width="641" height="194" key="GridCell.Tab.0.left" timestamp="1594474420099">
+    <state width="1324" height="194" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1594478268744" />
+    <state width="1324" height="194" key="GridCell.Tab.0.left" timestamp="1594478268744">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="641" height="194" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1594474420099" />
-    <state width="641" height="194" key="GridCell.Tab.0.right" timestamp="1594474420099">
+    <state width="1324" height="194" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1594478268744" />
+    <state width="1324" height="194" key="GridCell.Tab.0.right" timestamp="1594478268745">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="641" height="194" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1594474420099" />
+    <state width="1324" height="194" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1594478268745" />
     <state x="466" y="27" width="900" height="739" key="SettingsEditor" timestamp="1594412746906">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -126,5 +125,16 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="682" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1594412738909" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/RegisterSuccessfullyTest.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

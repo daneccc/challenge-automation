@@ -1,6 +1,6 @@
 package tests;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.After;
 import org.junit.Before;
@@ -12,21 +12,36 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class RegisterSuccessfullyTest {
 
     private WebDriver browser;
+    private String url = "https://www.organizze.com.br/";
+    private String password = "testaut2020";
+
+    // used to generate new random emails in Step 04
+    protected String getRandomString() {
+        String chars = "abcdefghijklmnopqrstuvwxyz1234567890";
+        StringBuilder user = new StringBuilder();
+        Random rnd = new Random();
+        while (user.length() < 10) { // length of the random string
+            int index = (int) (rnd.nextFloat() * chars.length());
+            user.append(chars.charAt(index));
+        }
+        return user.toString();
+    }
 
     @Before
     public void setUp() {
         // opening the browser
         System.setProperty("webdriver.chrome.driver", "chromedriver");
         browser = new ChromeDriver();
-        browser.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        browser.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         // STEP 01: access the URL
-        browser.get("https://www.organizze.com.br/");
+        browser.get(url);
     }
 
     @Test
@@ -41,13 +56,13 @@ public class RegisterSuccessfullyTest {
         WebElement signUpForm = browser.findElement(By.className("signup"));
 
         // STEP 04: fill in E-mail on "Seu email" field
-        signUpForm.findElement(By.id("email")).sendKeys("29@email.com");
+        signUpForm.findElement(By.id("email")).sendKeys(getRandomString() + "@email.com");
 
         // STEP 05: fill in Password on "Senha" field
-        signUpForm.findElement(By.id("password")).sendKeys("testaut2020");
+        signUpForm.findElement(By.id("password")).sendKeys(password);
 
         // STEP 06: fill in Password on "Repetir Senha" field
-        signUpForm.findElement(By.id("passwordConfirmation")).sendKeys("testaut2020");
+        signUpForm.findElement(By.id("passwordConfirmation")).sendKeys(password);
 
         // STEP 07: check the "Li e concordo com os termos de uso" option
         signUpForm.findElement(By.id("termsOfUse")).click();
@@ -55,12 +70,13 @@ public class RegisterSuccessfullyTest {
         // STEP 08: click on "Começar a usar"
         signUpForm.findElement(By.cssSelector("button.btn.btn-primary.btn-rounded")).click();
 
-        // Expected outcome:
+        // Loading box
         WebDriverWait waitLoadingBox = new WebDriverWait(browser, 15);
         waitLoadingBox.until(ExpectedConditions.visibilityOfElementLocated(By.className("signup__loading-box")));
-        String messageToWait = browser.findElement(By.className("signup__status-title")).getText();
-        assertEquals("Aguarde, estamos preparando sua conta...", messageToWait);
+        //String messageToWait = browser.findElement(By.className("signup__status-title")).getText();
+        //assertEquals("Aguarde, estamos preparando sua conta...", messageToWait);
 
+        // Expected outcome:
         WebDriverWait waitSuccessBox = new WebDriverWait(browser, 15);
         waitSuccessBox.until(ExpectedConditions.visibilityOfElementLocated(By.className("signup__success-box")));
         String congratsMessage = browser.findElement(By.xpath("//html/body/div[2]/div/div[2]/h3")).getText();
@@ -68,6 +84,8 @@ public class RegisterSuccessfullyTest {
         assertEquals("Parabéns! O Organizze já está preparado para você!", congratsMessage);
         assertEquals("Enviamos um e-mail para sua caixa de entrada. Confirme seu cadastro para receber um e-mail importante da nossa equipe.", infoMessage);
 
+        String btnStartNow = browser.findElement(By.xpath("/html/body/div[2]/div/div[2]/a")).getText();
+        assertEquals("Ok, começar agora", btnStartNow);
         browser.findElement(By.cssSelector("button.btn.btn-primary")).isDisplayed();
     }
 
