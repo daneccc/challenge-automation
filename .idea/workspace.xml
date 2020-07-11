@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38c45410-14ec-487c-a071-c281e94a2aa4" name="Default Changelist" comment="" />
+    <list default="true" id="38c45410-14ec-487c-a071-c281e94a2aa4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegisterSuccessfullyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegisterSuccessfullyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/RegisterSuccessfullyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/RegisterSuccessfullyTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +19,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -22,6 +30,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1eVbfm0lcKYtHaFKV6RvktSvE6a" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,13 +38,29 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RegisterSuccessfullyTest">
+    <configuration name="RegisterSuccessfullyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webdriver-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.RegisterSuccessfullyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegisterSuccessfullyTest.testCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webdriver-java" />
       <extension name="coverage">
@@ -54,6 +79,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RegisterSuccessfullyTest" />
         <item itemvalue="JUnit.RegisterSuccessfullyTest.testCase" />
       </list>
     </recent_temporary>
@@ -76,22 +102,22 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="556" y="59" width="800" height="675" key="#Project_Structure/0.27.1366.741@0.27.1366.741" timestamp="1594410268097" />
-    <state width="641" height="151" key="GridCell.Tab.0.bottom" timestamp="1594466788973">
+    <state width="641" height="194" key="GridCell.Tab.0.bottom" timestamp="1594474420099">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="641" height="151" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1594466788973" />
-    <state width="641" height="151" key="GridCell.Tab.0.center" timestamp="1594466788973">
+    <state width="641" height="194" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1594474420099" />
+    <state width="641" height="194" key="GridCell.Tab.0.center" timestamp="1594474420099">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="641" height="151" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1594466788973" />
-    <state width="641" height="151" key="GridCell.Tab.0.left" timestamp="1594466788972">
+    <state width="641" height="194" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1594474420099" />
+    <state width="641" height="194" key="GridCell.Tab.0.left" timestamp="1594474420099">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="641" height="151" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1594466788972" />
-    <state width="641" height="151" key="GridCell.Tab.0.right" timestamp="1594466788973">
+    <state width="641" height="194" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1594474420099" />
+    <state width="641" height="194" key="GridCell.Tab.0.right" timestamp="1594474420099">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="641" height="151" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1594466788973" />
+    <state width="641" height="194" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1594474420099" />
     <state x="466" y="27" width="900" height="739" key="SettingsEditor" timestamp="1594412746906">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

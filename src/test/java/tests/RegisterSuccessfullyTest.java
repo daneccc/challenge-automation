@@ -9,6 +9,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
@@ -18,47 +20,60 @@ public class RegisterSuccessfullyTest {
 
     @Before
     public void setUp() {
-        //opening the browser
+        // opening the browser
         System.setProperty("webdriver.chrome.driver", "chromedriver");
         browser = new ChromeDriver();
-        browser.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+        browser.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
-        //navigating to the page
+        // STEP 01: access the URL
         browser.get("https://www.organizze.com.br/");
     }
 
     @Test
     public void testCase() {
-        //clicar no link que possui o texto "Cadastre-se"
-        WebElement clickRegister = browser.findElement(By.linkText("Cadastre-se"));
-        clickRegister.click();
+        // STEP 02: click on "Cadastre-se"
+        browser.findElement(By.linkText("Cadastre-se")).click();
 
-        //identificando o formulário de cadastro
+        // STEP 03: select "Organizar as minhas finanças" option. I can't find
+        //browser.findElement(By.linkText("Organizar as minhas finanças")).click();
+
+        // Identifying the registration form
         WebElement signUpForm = browser.findElement(By.className("signup"));
 
-        //digitar no campo com nome "email" que está dentro do "signup__box" o texto "teste@email.com"
-        signUpForm.findElement(By.id("email")).sendKeys("test20@email.com");
+        // STEP 04: fill in E-mail on "Seu email" field
+        signUpForm.findElement(By.id("email")).sendKeys("29@email.com");
 
-        //digitar no campo "password" que está dentro do "signup__box" o texto "testaut2020"
+        // STEP 05: fill in Password on "Senha" field
         signUpForm.findElement(By.id("password")).sendKeys("testaut2020");
 
-        //digitar no campo "passwordConfirmation" que está dentro do "signup__box" o texto "testaut2020"
+        // STEP 06: fill in Password on "Repetir Senha" field
         signUpForm.findElement(By.id("passwordConfirmation")).sendKeys("testaut2020");
 
-        //clicar/selecionar no campo "termsOfUse"
+        // STEP 07: check the "Li e concordo com os termos de uso" option
         signUpForm.findElement(By.id("termsOfUse")).click();
 
-        //clicar no botao "Começar a usar"
+        // STEP 08: click on "Começar a usar"
         signUpForm.findElement(By.cssSelector("button.btn.btn-primary.btn-rounded")).click();
 
-        //singup__second
-        WebElement signUpSuccess = browser.findElement(By.cssSelector("button.btn.btn-primary"));
-        signUpSuccess.click();
+        // Expected outcome:
+        WebDriverWait waitLoadingBox = new WebDriverWait(browser, 15);
+        waitLoadingBox.until(ExpectedConditions.visibilityOfElementLocated(By.className("signup__loading-box")));
+        String messageToWait = browser.findElement(By.className("signup__status-title")).getText();
+        assertEquals("Aguarde, estamos preparando sua conta...", messageToWait);
+
+        WebDriverWait waitSuccessBox = new WebDriverWait(browser, 15);
+        waitSuccessBox.until(ExpectedConditions.visibilityOfElementLocated(By.className("signup__success-box")));
+        String congratsMessage = browser.findElement(By.xpath("//html/body/div[2]/div/div[2]/h3")).getText();
+        String infoMessage = browser.findElement(By.xpath("/html/body/div[2]/div/div[2]/p")).getText();
+        assertEquals("Parabéns! O Organizze já está preparado para você!", congratsMessage);
+        assertEquals("Enviamos um e-mail para sua caixa de entrada. Confirme seu cadastro para receber um e-mail importante da nossa equipe.", infoMessage);
+
+        browser.findElement(By.cssSelector("button.btn.btn-primary")).isDisplayed();
     }
 
     @After
     public void tearDown() {
-        //fechar o navegador
+        // Close the browser
         browser.quit();
     }
 }
